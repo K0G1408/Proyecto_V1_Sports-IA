@@ -9,5 +9,6 @@
 
 
 ### La inteligencia artificial será capaz de clasificar imágenes como la que sigue:
-![](https://github.com/Quetzal345/Sports-IA/blob/279a6949f4d7994f9b11c400ad03835787427e89/sports%20IA/single_test/baloncesto.png)
+![](https://github.com/Quetzal345/Sports-IA/blob/279a6949f4d7994f9b11c400ad03835787427e89/sports%20IA/single_test/baloncesto.jpg)
 ### De modo que, tras recibir la imagen de entrada, será capaz de predecir su clase, en este caso, baloncesto.
+![](https://github.com/Quetzal345/Sports-IA/blob/279a6949f4d7994f9b11c400ad03835787427e89/sports%20IA/prediccion.jpg)
