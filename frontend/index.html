@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports AI - Clasificación de Deportes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏆 Sports AI</h1>
+        <p>Sube una imagen y nuestro modelo identificará el deporte.</p>
+        
+        <div class="upload-area">
+            <input type="file" id="imageInput" accept="image/*">
+            <label for="imageInput" class="upload-btn">📷 Seleccionar Imagen</label>
+        </div>
+
+        <div class="preview-container">
+            <img id="imagePreview" src="" alt="Vista previa" style="display: none;">
+        </div>
+
+        <button id="classifyButton">🔍 Clasificar Deporte</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById("imageInput").addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const imgElement = document.getElementById("imagePreview");
+                    imgElement.src = e.target.result;
+                    imgElement.style.display = "block";
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        document.getElementById("classifyButton").addEventListener("click", function() {
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = "<p>⏳ Procesando imagen...</p>";
+
+            setTimeout(() => {
+                resultDiv.innerHTML = "<p>🏅 Resultado: (Aquí irá el deporte identificado)</p>";
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
