@@ -10,5 +10,5 @@
 
 ### La inteligencia artificial será capaz de clasificar imágenes como la que sigue:
 ![](https://github.com/K0G1408/Proyecto_V1_Sports-IA/blob/main/single_test/baloncesto.jpg)
-### De modo que, tras recibir la imagen de entrada, será capaz de predecir su clase, en este caso, baloncesto.
+### De modo que, tras recibir la imagen de entrada, será capaz de predecir su clase. En este caso, baloncesto.
 ![](https://github.com/K0G1408/Proyecto_V1_Sports-IA/blob/main/prediccion.JPG)
