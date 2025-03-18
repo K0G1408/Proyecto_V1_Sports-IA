@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-
-# Práctica 02: Redes Neuronales Convolucionales.
-
 # Importamos librerías y paquetes
 from keras.models import Sequential
 from keras.layers import Conv2D
